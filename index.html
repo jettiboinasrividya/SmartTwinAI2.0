@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SMARTTWIN AI 2.0</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h2>
+                <i class="fa-solid fa-microchip"></i>
+                SMARTTWIN AI
+            </h2>
+
+            <p>Autonomous Industrial Intelligence</p>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </li>
+
+            <li>
+                <i class="fa-solid fa-database"></i>
+                Industrial Data
+            </li>
+
+            <li>
+                <i class="fa-solid fa-network-wired"></i>
+                Data Collection
+            </li>
+
+            <li>
+                <i class="fa-solid fa-gears"></i>
+                Processing
+            </li>
+
+            <li>
+                <i class="fa-solid fa-cube"></i>
+                Digital Twin
+            </li>
+
+            <li>
+                <i class="fa-solid fa-chart-line"></i>
+                Monitoring
+            </li>
+
+            <li>
+                <i class="fa-solid fa-brain"></i>
+                AI Decision
+            </li>
+
+            <li>
+                <i class="fa-solid fa-robot"></i>
+                Factory Execution
+            </li>
+
+            <li>
+                <i class="fa-solid fa-repeat"></i>
+                Continuous Learning
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main">
+
+        <!-- Top Bar -->
+
+        <div class="topbar">
+
+            <h3>SMARTTWIN AI 2.0 Dashboard</h3>
+
+            <div class="status">
+
+                <span class="online"></span>
+
+                System Online
+
+            </div>
+
+        </div>
+
+        <!-- KPI Cards -->
+
+        <div class="row g-4 mt-2">
+
+            <div class="col-lg-3">
+
+                <div class="card dashboard-card">
+
+                    <i class="fa-solid fa-industry"></i>
+
+                    <h4>OEE</h4>
+
+                    <h2 id="oee">87%</h2>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="card dashboard-card">
+
+                    <i class="fa-solid fa-boxes-stacked"></i>
+
+                    <h4>Production</h4>
+
+                    <h2 id="production">15231</h2>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="card dashboard-card">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <h4>Energy</h4>
+
+                    <h2 id="energy">245300</h2>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="card dashboard-card">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    <h4>Failures</h4>
+
+                    <h2 id="failure">3</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Digital Twin -->
+
+        <div class="row mt-4">
+
+            <div class="col-lg-8">
+
+                <div class="panel">
+
+                    <h4>
+
+                        AI Powered Digital Twin
+
+                    </h4>
+
+                    <div id="digitalTwinCanvas"></div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="panel">
+
+                    <h4>Machine Health</h4>
+
+                    <canvas id="healthChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Monitoring -->
+
+        <div class="row mt-4">
+
+            <div class="col-lg-6">
+
+                <div class="panel">
+
+                    <h4>Production Trend</h4>
+
+                    <canvas id="productionChart"></canvas>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="panel">
+
+                    <h4>Energy Trend</h4>
+
+                    <canvas id="energyChart"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Pipeline -->
+
+        <div class="pipeline mt-5">
+
+            <div class="step">
+
+                <h5>1</h5>
+
+                <p>Industrial Data Sources</p>
+
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="step">
+
+                <h5>2</h5>
+
+                <p>Data Collection</p>
+
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="step">
+
+                <h5>3</h5>
+
+                <p>Processing & Integration</p>
+
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="step">
+
+                <h5>4</h5>
+
+                <p>AI Digital Twin</p>
+
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="step">
+
+                <h5>5</h5>
+
+                <p>Monitoring</p>
+
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="step">
+
+                <h5>6</h5>
+
+                <p>Simulation</p>
+
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="step">
+
+                <h5>7</h5>
+
+                <p>AI Decision Engine</p>
+
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="step">
+
+                <h5>8</h5>
+
+                <p>Factory Execution</p>
+
+            </div>
+
+            <div class="arrow">➜</div>
+
+            <div class="step">
+
+                <h5>9</h5>
+
+                <p>Continuous Learning</p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer KPI -->
+
+        <div class="row mt-5">
+
+            <div class="col-lg-3">
+
+                <div class="footer-card">
+
+                    <h5>Downtime Reduced</h5>
+
+                    <h2>32%</h2>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="footer-card">
+
+                    <h5>Production Increased</h5>
+
+                    <h2>18%</h2>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="footer-card">
+
+                    <h5>Energy Saved</h5>
+
+                    <h2>15%</h2>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="footer-card">
+
+                    <h5>Maintenance Cost Saved</h5>
+
+                    <h2>25%</h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/digitalTwin.js"></script>
+    <script src="js/simulation.js"></script>
+
+</body>
+</html>
